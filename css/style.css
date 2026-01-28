@@ -777,6 +777,29 @@ header.page-header.is-sticky .site-navbar ul li a {
     background-position: center;
     background-repeat: no-repeat;
     background-color: rebeccapurple;
+    position: relative;
+    z-index: 1;
+}
+
+.inner-bnr::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.inner-bnr-content {
+    text-align: center;
+}
+
+.inner-bnr-content h2 {
+    color: #ffff;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .returns-policy {
@@ -817,4 +840,66 @@ header.page-header.is-sticky .site-navbar ul li a {
     height: 8px;
     border-radius: 50%;
     background-color: #000;
+}
+
+.shipping-details-content {
+    padding: 60px 0;
+}
+
+.shipping-details-content-inner h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.shipping-details-content-inner p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #000;
+}
+
+.memorabilia-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.memorabilia-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-content {
+    padding: 15px 22px;
+}
+.memorabilia-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-content {
+    padding: 15px 22px;
+}
+
+.card-content h3 {
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-content span {
+    color: #d4af37;
+    display: block;
+    padding: 5px 0;
+}
+
+.card-content p {
+    color: #000;
+    font-size: 16px;
+    line-height: 28px;
 }
