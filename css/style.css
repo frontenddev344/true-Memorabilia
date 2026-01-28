@@ -765,3 +765,56 @@ header.page-header.is-sticky .site-navbar ul li a {
     font-size: 16px;
     line-height: 28px;
 }
+
+
+
+.inner-bnr {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rebeccapurple;
+}
+
+.returns-policy {
+    padding: 60px 0;
+}
+
+.returns-policy-content p {
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.returns-policy-content h5 {
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.returns-policy-content ul li {
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 12px;
+    padding-left: 26px;
+    position: relative;
+}
+
+.returns-policy-content ul {
+    margin-bottom: 12px;
+}
+
+.returns-policy-content ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #000;
+}
