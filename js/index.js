@@ -39,38 +39,49 @@ window.addEventListener("scroll", () => {
 });
 
 // Cookie Popup Functionality
-const cookiePopup = document.getElementById('cookie-popup');
-const acceptCookiesBtn = document.getElementById('accept-cookies');
-const declineCookiesBtn = document.getElementById('decline-cookies');
+function initCookiePopup() {
+    const cookiePopup = document.getElementById('cookie-popup');
+    const acceptCookiesBtn = document.getElementById('accept-cookies');
+    const declineCookiesBtn = document.getElementById('decline-cookies');
 
-// Check if user has already made a choice
-function checkCookieConsent() {
-    const cookieConsent = localStorage.getItem('cookieConsent');
-    if (!cookieConsent) {
-        // Show popup after a short delay
-        setTimeout(() => {
-            cookiePopup.classList.add('show');
-        }, 1000);
+    // Check if cookie popup exists on the page
+    if (cookiePopup && acceptCookiesBtn && declineCookiesBtn) {
+        // Check if user has already made a choice
+        function checkCookieConsent() {
+            const cookieConsent = localStorage.getItem('cookieConsent');
+            if (!cookieConsent) {
+                // Show popup after a short delay
+                setTimeout(() => {
+                    cookiePopup.classList.add('show');
+                }, 1000);
+            }
+        }
+
+        // Accept cookies
+        acceptCookiesBtn.addEventListener('click', () => {
+            localStorage.setItem('cookieConsent', 'accepted');
+            cookiePopup.classList.remove('show');
+            // You can add additional cookie setting logic here
+        });
+
+        // Decline cookies
+        declineCookiesBtn.addEventListener('click', () => {
+            localStorage.setItem('cookieConsent', 'declined');
+            cookiePopup.classList.remove('show');
+            // You can add additional cookie removal logic here
+        });
+
+        // Initialize cookie popup
+        checkCookieConsent();
     }
 }
 
-// Accept cookies
-acceptCookiesBtn.addEventListener('click', () => {
-    localStorage.setItem('cookieConsent', 'accepted');
-    cookiePopup.classList.remove('show');
-    // You can add additional cookie setting logic here
-});
-
-// Decline cookies
-declineCookiesBtn.addEventListener('click', () => {
-    localStorage.setItem('cookieConsent', 'declined');
-    cookiePopup.classList.remove('show');
-    // You can add additional cookie removal logic here
-});
-
-// Initialize cookie popup on page load
-document.addEventListener('DOMContentLoaded', () => {
-    checkCookieConsent();
-});
+// Initialize cookie popup when DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCookiePopup);
+} else {
+    // DOM is already loaded
+    initCookiePopup();
+}
 
 
