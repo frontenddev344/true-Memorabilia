@@ -960,9 +960,9 @@ section.featured-legends {
     padding: 40px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    
+
     border-right: 1px solid #f0f2f4;
-    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
 }
 
 .get-in-touch-form {
@@ -970,7 +970,7 @@ section.featured-legends {
     padding: 40px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
 }
 
 .get-in-touch-content h3 {
@@ -1039,16 +1039,25 @@ section.featured-legends {
     border: 1px solid #e1e4e8;
     border-radius: 6px;
     padding: 12px 16px;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+
 }
-.form-group textarea:focus, .form-group input:focus {
+
+.form-group textarea:focus,
+.form-group input:focus {
     outline: none;
 }
+
 .form-group textarea {
     width: 100%;
     border: 1px solid #e1e4e8;
     border-radius: 6px;
     padding: 12px 16px;
     height: 150px;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+
     resize: none;
 }
 
@@ -1056,6 +1065,7 @@ section.featured-legends {
     display: flex;
     flex-direction: column;
     gap: 10px;
+
 }
 
 .form-group button {
@@ -1070,4 +1080,75 @@ section.featured-legends {
     margin-top: 10px;
     transition: all 0.3s ease;
     display: inline-block;
+}
+
+.premium-football {
+    padding: 60px 0;
+    background-color: #f5f5f517;
+}
+
+.premium-football-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.premium-left h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.premium-left p {
+    margin-bottom: 10px;
+}
+
+.premium-left ul li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+
+
+.premium-left ul li svg {
+    width: 24px;
+    height: 24px;
+    stroke: #d4af37;
+    fill: none;
+    stroke-width: 2;
+}
+
+
+
+
+.premium-right-inner h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #d4af37;
+}
+
+.premium-right-inner p {
+    margin-bottom: 10px;
+}
+
+.premium-right-inner ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 30px;
+    padding-left: 26px;
+    position: relative;
+}
+
+.premium-right-inner ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #000;
 }
