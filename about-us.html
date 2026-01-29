@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rólunk</title>
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -18,20 +19,18 @@
                 <div class="container">
                     <nav class="site-navbar">
                         <!-- site logo -->
-                        <a href="index.html" class="site-logo white-logo">
+                        <a href="./" class="site-logo white-logo">
                             <img src="images/logo.png" alt="logo">
                         </a>
-                        <a href="index.html" class="site-logo black-logo">
-                            <img src="images/logo1.png" alt="logo">
-                        </a>
+                       
                         <!-- site menu/nav -->
                         <ul>
                             <li><a href="/">Kezdőlap </a></li>
                             <li><a href="shirts">ingek </a></li>
                             <li><a href="about-us" class="active">Rólunk </a></li>
-                            <li><a href="#">hitelesítés</a></li>
-                            <li><a href="#">Szállítás </a></li>
-                            <li><a href="#">lépjen kapcsolatba velünk </a></li>
+                            <li><a href="authentication">hitelesítés</a></li>
+                            <li><a href="shipping">Szállítás </a></li>
+                            <li><a href="contact-us">lépjen kapcsolatba velünk </a></li>
 
                         </ul>
                         <!-- nav-toggler for mobile version only -->
@@ -54,7 +53,7 @@
         <section class="inner-bnr" style="background-image: url(images/ingek.jpg);">
             <div class="container">
                 <div class="inner-bnr-content">
-                    <h2>Rólunk </h2>
+                    <h2 data-aos="zoom-in">Rólunk </h2>
                 </div>
             </div>
         </section>
@@ -63,10 +62,10 @@
             <div class="container">
                 <div class="shipping-details-content-inner">
                     <div class="content-wrapper">
-                        <div class="image-side">
+                        <div class="image-side" data-aos="fade-right">
                             <img src="images/signed-football.png" alt="">
                         </div>
-                        <div class="content-side">
+                        <div class="content-side" data-aos="fade-left">
                             <h2>Rólunk
                             </h2>
                             <p>A true-Memorabilia a megbízható forrás, ha hiteles, aláírt futballmezeket keresel a világ
@@ -154,8 +153,12 @@
         <div class="container footer-main">
             <div class="footer-grid">
 
-                <div class="footer-brand">
-                    <img src="images/logo.png" alt="logo" class="w-full">
+               <div class="footer-brand">
+                    <a href="./">
+                        <img src="images/logo.png" alt="logo" class="w-full">
+                    </a>
+
+
                     <div class="social-icons">
                         <!-- Facebook -->
                         <a href="https://www.facebook.com/" target="_blank">
@@ -166,7 +169,7 @@
                         </a>
 
                         <!-- Instagram -->
-                        <a href="https://www.instagram.com/" target="_blank">
+                     
                             <!-- Instagram -->
                             <a href="https://www.instagram.com/" target="_blank" class="social-icon">
                                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -191,7 +194,7 @@
                 </div>
 
                 <div class="footer-links">
-                    <h4>Gyors linkek</h4>
+                    <h3>Gyors linkek</h3>
                     <ul>
                         <li><a href="/" class="active">Kezdőlap </a></li>
                         <li><a href="shirts">ingek </a></li>
@@ -203,7 +206,7 @@
                 </div>
 
                 <div class="footer-links">
-                    <h4>Ügyfélszolgálat</h4>
+                    <h3>Ügyfélszolgálat</h3>
                     <ul>
                         <li><a href="returns">Visszaküldési szabályzat</a></li>
                         <li><a href="terms-and-conditions">Általános Szerződési Feltételek</a></li>
@@ -212,7 +215,7 @@
                 </div>
 
                 <div class="footer-links">
-                    <h4>Lépjen kapcsolatba velünk</h4>
+                    <h3>Lépjen kapcsolatba velünk</h3>
                     <p>Have questions about our memorabilia?</p>
                     <p>Monday – Friday<br>9:00am – 5:00pm (UK time)</p>
                 </div>
@@ -231,6 +234,12 @@
     </footer>
 
     <script src="js/index.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        })
+    </script>
 </body>
 
 </html>

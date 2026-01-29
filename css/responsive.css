@@ -1,3 +1,73 @@
+@media screen and (max-width: 1199px) {
+    .footer-trust .trust-item span {
+        font-size: 14px;
+    }
+
+    .premium-football {
+        padding: 40px 0;
+    }
+
+    .cta-hero {
+        padding: 40px 0;
+    }
+
+    .shipping-details-content {
+        padding: 40px 0;
+    }
+
+    .hero-sec {
+        height: 500px;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .inner-bnr-content h2 {
+        font-size: 28px;
+    }
+
+    .hero-content {
+
+        left: 0;
+    }
+
+    .memorabilia-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .collection-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .footer-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .footer-trust .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .footer-trust .trust-item {
+
+        justify-content: center;
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 991px) {
 
     /* navbar css for mobile start */
@@ -44,4 +114,244 @@
         padding-top: 60px;
     }
 
+    /* Contact form section responsive */
+    .get-in-touch {
+        padding: 50px 0;
+    }
+
+    .get-in-touch-inner {
+        grid-template-columns: 1fr;
+        border-radius: 16px;
+    }
+
+    .get-in-touch-content {
+        padding: 40px 30px;
+        border-right: none;
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    .get-in-touch-form {
+        padding: 40px 30px;
+    }
+
+    .contact-info-header h3 {
+        font-size: 28px;
+    }
+
+    .form-header h2 {
+        font-size: 28px;
+    }
+
+    .contact-methods h3,
+    .opening-hours-box h3,
+    .trust-box h3 {
+        font-size: 22px;
+    }
+
+    .cta-content h2 {
+        font-size: 28px;
+
+    }
+
+    .explore-our-collections-content h2,
+    .featured-items-content h2,
+    .built-for-collectors-content h2 {
+        color: #000;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 50px;
+        text-transform: capitalize;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .contact-info-item {
+        grid-column: 1 / -1;
+    }
+
+    .memorabilia-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .featured-legends-inner h2 {
+        margin-bottom: 40px;
+        font-size: 30px;
+
+    }
+
+    .premium-left h3 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .collection-card {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .explore-our-collections .collection-card {
+        grid-template-columns: 1fr;
+    }
+
+    .explore-our-collections .collection-card .collection-content,
+    .built-for-collectors .collection-card .collection-content {
+        order: 2;
+    }
+
+    .auth-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .key-sec .auth-grid .auth-content {
+        order: 2;
+    }
+
+    .collection-content {
+        padding: 20px;
+ 
+    }
+    .auth-content h2 {
+        font-size: 30px;
+    
+    }
+
+
+}
+
+@media screen and (max-width: 767px) {
+    .content-wrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .premium-football-inner {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .cta-content p {
+
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .footer-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .footer-trust .trust-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .footer-trust .trust-item {
+        justify-content: flex-start;
+    }
+
+    .trust-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .trust-bar .trust-item {
+        justify-content: center;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-btns a {
+        width: 100%;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .memorabilia-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .get-in-touch-content {
+        padding: 30px 20px;
+    }
+
+    .get-in-touch-form {
+        padding: 30px 20px;
+    }
+
+    .contact-info-header h3 {
+        font-size: 24px;
+    }
+
+    .form-header h2 {
+        font-size: 24px;
+    }
+
+    .contact-methods h3,
+    .opening-hours-box h3,
+    .trust-box h3 {
+        font-size: 20px;
+    }
+
+    .response-time-box,
+    .hours-display,
+    .trust-box {
+        padding: 16px;
+    }
+
+    /* Contact Info Section Responsive */
+    .contact-info-section {
+        padding: 50px 0;
+    }
+
+    .contact-info-wrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .contact-info-item.trust-info-box {
+        grid-column: 1;
+    }
+
+    .contact-info-item h3 {
+        font-size: 24px;
+    }
+
+    .trust-info-box {
+        padding: 25px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-info-item h3 {
+        font-size: 22px;
+    }
+
+    .opening-hours-info-box {
+        padding: 14px 18px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .opening-hours-info-box svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .trust-info-box {
+        padding: 20px 16px;
+    }
+
+    .trust-info-content p {
+        font-size: 15px;
+    }
 }
