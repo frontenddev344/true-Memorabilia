@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hitelesítés</title>
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -24,7 +25,7 @@
                        
                         <!-- site menu/nav -->
                         <ul>
-                            <li><a href="/">Kezdőlap </a></li>
+                            <li><a href="./">Kezdőlap </a></li>
                             <li><a href="shirts">ingek </a></li>
                             <li><a href="about-us">Rólunk </a></li>
                             <li><a href="authentication.html" class="active">hitelesítés</a></li>
@@ -52,8 +53,8 @@
         <section class="inner-bnr" style="background-image: url(images/authication.png);">
             <div class="container">
                 <div class="inner-bnr-content">
-                    <h2>Hitelesítés </h2>
-                    <p>A true-Memorabiliánál a hitelesség nem opcionális – ez minden tevékenységünk alapja. Megértjük,
+                    <h2 data-aos="fade-up">Hitelesítés </h2>
+                    <p data-aos="fade-up">A true-Memorabiliánál a hitelesség nem opcionális – ez minden tevékenységünk alapja. Megértjük,
                         hogy amikor aláírt futballmezekbe fektet be, a bizalom ugyanolyan fontos, mint maga az aláírás.
                     </p>
                 </div>
@@ -61,7 +62,7 @@
         </section>
         <section class="authentic-signed">
             <div class="container">
-                <div class="authentic-signed-content">
+                <div class="authentic-signed-content" data-aos="fade-up">
                     <h2>100%-ban eredeti, aláírt futballmezek </h2>
                     <p>A true-Memorabilia oldalon felsorolt ​​összes mez 100%-ban eredeti, és a megadott játékos kézzel
                         írta alá. Nem árusítunk replikákat, előnyomtatásokat vagy tömeggyártott autogramokat. Amit lát,
@@ -74,11 +75,11 @@
             <div class="container">
                 <div class="auth-grid">
                     <!-- Image -->
-                    <div class="auth-image">
-                        <img src="images/certificate.jpg" alt="Certificate of Authenticity">
+                    <div class="auth-image" data-aos="fade-right">
+                        <img src="images/third-party.png" alt="Certificate of Authenticity">
                     </div>
                     <!-- Content -->
-                    <div class="auth-content">
+                    <div class="auth-content" data-aos="fade-left">
 
                         <h2>Megbízható harmadik fél általi hitelesítés</h2>
                         <p>Minden aláírt futballmezt független, elismert harmadik fél hitelesítési cégek hitelesítenek.
@@ -130,11 +131,11 @@
                 <div class="collection-wrapper">
                     <div class="collection-card">
                         <!-- Image Side -->
-                        <div class="collection-image">
+                        <div class="collection-image" data-aos="fade-right">
                             <img src="images/unnamed.png" alt="images">
                         </div>
                         <!-- Content Side -->
-                        <div class="collection-content">
+                        <div class="collection-content" data-aos="fade-left">
                             <h3>Miért számít a hitelesítés?
                             </h3>
                             <p> A sportrelikvia piacát elárasztják a nem ellenőrzött tárgyak. Megfelelő hitelesítés
@@ -151,10 +152,10 @@
 
                     </div>
                 </div>
-                <div class="collection-wrapper">
+                <div class="collection-wrapper commitment ">
                     <div class="collection-card">
                         <!-- Content Side -->
-                        <div class="collection-content">
+                        <div class="collection-content" data-aos="fade-left">
                             <h3>Elkötelezettségünk a gyűjtők iránt
                             </h3>
                             <p>Kizárólag megbízható beszállítókkal és ellenőrzött forrásokkal dolgozunk, és minden egyes
@@ -163,7 +164,7 @@
                                 és az elkövetkező években is támaszkodhatnak.</p>
                         </div>
                         <!-- Image Side -->
-                        <div class="collection-image">
+                        <div class="collection-image" data-aos="fade-right">
                             <img src="images/unnamed.png" alt="images">
                         </div>
                     </div>
@@ -171,11 +172,11 @@
                 <div class="collection-wrapper">
                     <div class="collection-card">
                         <!-- Image Side -->
-                        <div class="collection-image">
+                        <div class="collection-image" data-aos="fade-right">
                             <img src="images/unnamed.png" alt="images">
                         </div>
                         <!-- Content Side -->
-                        <div class="collection-content">
+                        <div class="collection-content" data-aos="fade-left">
                             <h3>Vásároljon bizalommal
                             </h3>
                             <p>Amikor a true-Memorabilia-nál vásárolsz, nem csupán egy aláírt futballmezt vásárolsz – a
@@ -342,6 +343,10 @@
 
 
     <script src="js/index.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

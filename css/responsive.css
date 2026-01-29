@@ -210,13 +210,20 @@
 
     .collection-content {
         padding: 20px;
- 
-    }
-    .auth-content h2 {
-        font-size: 30px;
-    
+
     }
 
+    .auth-content h2 {
+        font-size: 30px;
+
+    }
+
+    .commitment .collection-card .collection-content {
+        order: 2;
+    }
+    .authentic-signed-content h2 {
+        font-size: 30px;
+    }
 
 }
 
