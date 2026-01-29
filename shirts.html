@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ingek</title>
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -52,7 +53,7 @@
         <section class="inner-bnr" style="background-image: url(images/ingek.jpg);">
             <div class="container">
                 <div class="inner-bnr-content">
-                    <h2>Ingyek </h2>
+                    <h2 data-aos="fade-up">Ingyek </h2>
                 </div>
             </div>
         </section>
@@ -61,10 +62,10 @@
             <div class="container">
                 <div class="shipping-details-content-inner">
                     <div class="content-wrapper">
-                        <div class="image-side">
+                        <div class="image-side" data-aos="fade-right">
                             <img src="images/signed-football.png" alt="">
                         </div>
-                        <div class="content-side">
+                        <div class="content-side" data-aos="fade-left">
                             <h2>Autentikus mezek, melyeket a futball legnagyobb játékosai írtak alá
                             </h2>
                             <p>Fedezz fel egy válogatott, hiteles, aláírt futballmezekből álló gyűjteményt a világ
@@ -85,9 +86,9 @@
         <section class="featured-legends">
             <div class="container">
                 <div class="featured-legends-inner">
-                    <h2>Kiemelt legendák</h2>
+                    <h2 data-aos="zoom-in">Kiemelt legendák</h2>
                     <div class="memorabilia-grid">
-                        <div class="memorabilia-card">
+                        <div class="memorabilia-card" data-aos="fade-up">
                             <a href="contact-us">
                                 <div class="image-wrap">
                                     <img src="images/messi.webp" alt="Lionel Messi Signed Argentina Shirt">
@@ -103,7 +104,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="memorabilia-card">
+                        <div class="memorabilia-card" data-aos="fade-up">
                             <a href="contact-us">
                                 <div class="image-wrap">
                                     <img src="images/ronaldo.webp" alt="">
@@ -120,7 +121,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="memorabilia-card">
+                        <div class="memorabilia-card" data-aos="fade-up">
                             <a href="contact-us">
                                 <div class="image-wrap">
                                     <img src="images/pele.jpeg" alt="pele">
@@ -135,7 +136,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="memorabilia-card">
+                        <div class="memorabilia-card" data-aos="fade-up">
                             <a href="contact-us">
                                 <div class="image-wrap">
                                     <img src="images/maradona-HR-E.jpeg.webp" alt="Lionel Messi Signed Argentina Shirt">
@@ -150,7 +151,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="memorabilia-card">
+                        <div class="memorabilia-card" data-aos="fade-up">
                             <a href="contact-us">
                                 <div class="image-wrap">
                                     <img src="images/Zinedine.webp" alt="Lionel Messi Signed Argentina Shirt">
@@ -165,7 +166,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="memorabilia-card">
+                        <div class="memorabilia-card" data-aos="fade-up">
                             <a href="contact-us">
                                 <div class="image-wrap">
                                     <img src="images/Beckham-1-1.jpg.webp" alt="Lionel Messi Signed Argentina Shirt">
@@ -180,7 +181,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="memorabilia-card">
+                        <div class="memorabilia-card" data-aos="fade-up">
                             <a href="contact-us">
                                 <div class="image-wrap">
                                     <img src="images/Kylian.webp" alt="Kylian">
@@ -196,7 +197,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="memorabilia-card">
+                        <div class="memorabilia-card" data-aos="fade-up">
                             <a href="contact-us">
                                 <div class="image-wrap">
                                     <img src="images/Erling.webp" alt="Erling Haaland">
@@ -220,7 +221,7 @@
         <section class="premium-football">
             <div class="container">
                 <div class="premium-football-inner">
-                    <div class="premium-left">
+                    <div class="premium-left" data-aos="fade-right">
                         <h3>Prémium futball emléktárgyak</h3>
                         <p>Aláírt futballmezeink a következőket tartalmazzák:</p>
                         <ul>
@@ -269,7 +270,7 @@
                             value.
                         </p>
                     </div>
-                    <div class="premium-right">
+                    <div class="premium-right" data-aos="fade-left">
                         <div class="premium-right-inner">
                             <h3>Garantált eredetiség </h3>
                             <p>Minden aláírt futballmezhez tartozik:</p>
@@ -302,7 +303,7 @@
             <div class="glow-bg"></div>
 
             <div class="container">
-                <div class="cta-content">
+                <div class="cta-content" data-aos="zoom-in">
                     <h2>Gyűjtőknek és rajongóknak</h2>
                     <p>
                         Akár egy gyűjteményt indítasz, akár egy központi elemet adsz hozzá, az aláírt futballmezek
@@ -461,6 +462,12 @@
 
 
     <script src="js/index.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        })
+    </script>
 </body>
 
 </html>

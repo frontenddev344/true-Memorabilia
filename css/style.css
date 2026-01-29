@@ -115,17 +115,10 @@ a.site-logo img {
     max-width: 150px;
 }
 
-.is-sticky a.site-logo.white-logo {
-    display: none;
-}
 
-a.site-logo.black-logo {
-    display: none;
-}
 
-.is-sticky a.site-logo.black-logo {
-    display: block;
-}
+
+
 
 .site-navbar {
     display: flex;
@@ -153,9 +146,7 @@ a.site-logo.black-logo {
     font-weight: normal;
 }
 
-header.page-header.is-sticky .site-navbar ul li a {
-    color: var(--black);
-}
+
 
 .site-navbar ul li a:hover {
     color: #d4af37;
@@ -1735,4 +1726,10 @@ section.featured-legends {
 .trust-highlight strong {
     font-weight: 700;
     color: #000;
+}
+.collection-image img {
+    width: 100%;
+    max-width: 600px;
+    object-fit: cover;
+    height: 500px;
 }
