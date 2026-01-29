@@ -931,3 +931,143 @@ section.featured-legends {
     height: 500px;
     object-fit: cover;
 }
+
+.contact-us-section {
+    padding: 60px 0;
+}
+
+.contact-us-content p {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.get-in-touch {
+    padding: 60px 0;
+    background-color: #f5f5f5;
+}
+
+.get-in-touch-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.get-in-touch-content {
+    background-color: #fff;
+    padding: 40px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+    border-right: 1px solid #f0f2f4;
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+}
+
+.get-in-touch-form {
+    background-color: #fdfdfe;
+    padding: 40px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+}
+
+.get-in-touch-content h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.get-in-touch-content p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #000;
+    line-height: normal;
+}
+
+.get-in-touch-content ul {
+    margin-bottom: 20px;
+}
+
+.get-in-touch-content ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #000;
+    line-height: normal;
+    padding-left: 26px;
+    position: relative;
+}
+
+.get-in-touch-content ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 8px;
+    height: 8px;
+    list-style: none;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.get-in-touch-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.get-in-touch-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.form-group label {
+    text-transform: capitalize;
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.form-group {
+    margin-block-end: 10px;
+}
+
+.form-group input {
+    width: 100%;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    padding: 12px 16px;
+}
+.form-group textarea:focus, .form-group input:focus {
+    outline: none;
+}
+.form-group textarea {
+    width: 100%;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    padding: 12px 16px;
+    height: 150px;
+    resize: none;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group button {
+    padding: .7rem 1.75rem;
+    background: #000;
+    border-radius: 999px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: capitalize;
+    border: 1px solid #000;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
