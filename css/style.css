@@ -178,7 +178,7 @@ header.page-header.is-sticky .site-navbar ul li a {
 .nav-toggler span {
     width: 28px;
     height: 3px;
-    background-color: var(--red);
+    background-color: #000;
     display: block;
     transition: 0.3s;
 }
@@ -186,7 +186,7 @@ header.page-header.is-sticky .site-navbar ul li a {
 .nav-toggler span:before {
     width: 28px;
     height: 3px;
-    background-color: var(--red);
+    background-color: #000;
     display: block;
     transition: 0.3s;
     content: "";
@@ -196,7 +196,7 @@ header.page-header.is-sticky .site-navbar ul li a {
 .nav-toggler span:after {
     width: 28px;
     height: 3px;
-    background-color: var(--red);
+    background-color: #000;
     display: block;
     transition: 0.3s;
     content: "";

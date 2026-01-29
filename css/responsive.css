@@ -105,7 +105,7 @@
     }
 
     .site-navbar ul li a.active {
-        color: var(--red) !important;
+        color: #d4af37 !important;
     }
 
     .site-navbar ul.open {
