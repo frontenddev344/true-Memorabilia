@@ -41,7 +41,7 @@ img {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 15px ;
+    padding: 0 15px;
 }
 
 p,
@@ -85,7 +85,7 @@ h6 {
     top: 0;
     right: 0;
     left: 0;
-    padding: 23px 0;
+    padding: 14px 0;
     z-index: 1;
     z-index: 999;
 }
@@ -112,7 +112,7 @@ h6 {
 }
 
 a.site-logo img {
-    max-width: 150px;
+    max-width: 200px;
 }
 
 
@@ -630,6 +630,10 @@ a.site-logo img {
     font-size: 14px;
 }
 
+.footer-brand img {
+    width: 100%;
+    max-width: 210px;
+}
 
 /* Trust Row */
 .footer-trust {
@@ -1727,6 +1731,7 @@ section.featured-legends {
     font-weight: 700;
     color: #000;
 }
+
 .collection-image img {
     width: 100%;
     max-width: 600px;
