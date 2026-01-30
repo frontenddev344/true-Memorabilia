@@ -84,4 +84,47 @@ if (document.readyState === 'loading') {
     initCookiePopup();
 }
 
+// Safari video autoplay fix
+function initHeroVideo() {
+    const heroVideo = document.querySelector('.hero-video');
+    if (heroVideo) {
+        // Force play for Safari
+        const playPromise = heroVideo.play();
+        
+        if (playPromise !== undefined) {
+            playPromise.then(() => {
+                // Autoplay started successfully
+                heroVideo.muted = true; // Ensure muted
+            }).catch(error => {
+                // Autoplay was prevented, try again on user interaction
+                document.addEventListener('touchstart', () => {
+                    heroVideo.play().catch(() => {});
+                }, { once: true });
+                
+                document.addEventListener('click', () => {
+                    heroVideo.play().catch(() => {});
+                }, { once: true });
+            });
+        }
+        
+        // Ensure video stays muted and loops
+        heroVideo.muted = true;
+        heroVideo.loop = true;
+        
+        // Handle visibility change to resume playback
+        document.addEventListener('visibilitychange', () => {
+            if (!document.hidden && heroVideo.paused) {
+                heroVideo.play().catch(() => {});
+            }
+        });
+    }
+}
+
+// Initialize video when DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initHeroVideo);
+} else {
+    initHeroVideo();
+}
+
 

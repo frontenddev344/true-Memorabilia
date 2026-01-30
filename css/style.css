@@ -236,6 +236,28 @@ a.site-logo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    pointer-events: none;
+}
+
+/* Hide video controls and play button in Safari */
+.hero-sec video::-webkit-media-controls {
+    display: none !important;
+}
+
+.hero-sec video::-webkit-media-controls-enclosure {
+    display: none !important;
+}
+
+.hero-sec video::-webkit-media-controls-panel {
+    display: none !important;
+}
+
+.hero-sec video::-webkit-media-controls-play-button {
+    display: none !important;
+}
+
+.hero-sec video::-webkit-media-controls-start-playback-button {
+    display: none !important;
 }
 
 .hero-content {
