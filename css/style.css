@@ -298,7 +298,10 @@ a.site-logo img {
     display: inline-block;
     margin-top: 20px;
 }
-
+.hero-btns a:hover {
+    background: #b8941f;
+    color: #fff;
+}
 /* trust bar css */
 .trust-bar {
     padding: 24px 0;
@@ -413,6 +416,10 @@ a.site-logo img {
     display: inline-block;
     margin-top: 20px;
 }
+.auth-content a:hover{
+    background: #b8941f;
+    color: #fff;
+}
 
 .section-label {
     color: #d4af37;
@@ -462,9 +469,9 @@ a.site-logo img {
 }
 
 .cta-content a:hover {
-    background: transparent;
-    color: #000;
-    border: 1px solid #000;
+    background: #b8941f;
+    border: 1px solid #b8941f;
+    color: #fff;
 }
 
 .shipping-services {
@@ -534,6 +541,11 @@ a.site-logo img {
     margin-top: 10px;
     transition: all 0.3s ease;
     display: inline-block;
+}
+.btn-group a:hover {
+    background: #b8941f;
+    border: 1px solid #b8941f;
+    color: #fff;
 }
 
 .explore-our-collections-content,
@@ -1420,7 +1432,7 @@ section.featured-legends {
     font-weight: 700;
     color: #fff;
     text-transform: capitalize;
-    border: 2px solid #000;
+    border: 1px solid #000;
     margin-top: 10px;
     transition: all 0.3s ease;
     display: inline-block;
@@ -1430,9 +1442,11 @@ section.featured-legends {
 }
 
 .form-group button:hover {
-    background: #1a1a1a;
+    background: #b8941f;
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    color: #fff;
+    border: 1px solid #b8941f;
 }
 
 .form-group .error-message {
