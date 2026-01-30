@@ -456,7 +456,7 @@ a.site-logo img {
     color: #fff;
     text-transform: capitalize;
     border: 1px solid #000;
-
+    display: inline-block;
     transition: all 0.3s ease;
 }
 
