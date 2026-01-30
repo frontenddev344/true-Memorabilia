@@ -147,23 +147,27 @@
                             <h2>Forma</h2>
                             <p class="form-subtitle">Töltse ki az alábbi űrlapot és hamarosan válaszolunk</p>
                         </div>
-                        <form action="#">
+                        <form action="#" id="contact-form">
                             <div class="form-wrapper">
                                 <div class="form-group">
                                     <label for="name">név</label>
                                     <input type="text" id="name" name="name" placeholder="Név">
+                                    <span class="error-message"></span>
                                 </div>
                                 <div class="form-group">
                                     <label for="email">email</label>
                                     <input type="email" id="email" name="email" placeholder="Email">
+                                    <span class="error-message"></span>
                                 </div>
                                 <div class="form-group">
                                     <label for="phone">telefonszám</label>
                                     <input type="tel" id="phone" name="phone" placeholder="Telefonszám">
+                                    <span class="error-message"></span>
                                 </div>
                                 <div class="form-group">
                                     <label for="message">üzenet</label>
                                     <textarea id="message" name="message" placeholder="Üzenet"></textarea>
+                                    <span class="error-message"></span>
                                 </div>
 
                                 <div class="form-group">
@@ -390,6 +394,88 @@
         AOS.init({
             duration: 1200,
         })
+    </script>
+    <script>
+        // Contact form validation
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contact-form');
+            const formFields = [
+                { id: 'name', element: document.getElementById('name') },
+                { id: 'email', element: document.getElementById('email') },
+                { id: 'phone', element: document.getElementById('phone') },
+                { id: 'message', element: document.getElementById('message') }
+            ];
+
+            // Function to show error message
+            function showError(fieldId, message) {
+                const field = formFields.find(f => f.id === fieldId);
+                if (field) {
+                    const errorMessage = field.element.parentElement.querySelector('.error-message');
+                    field.element.classList.add('error');
+                    errorMessage.textContent = message;
+                    errorMessage.classList.add('show');
+                }
+            }
+
+            // Function to hide error message
+            function hideError(fieldId) {
+                const field = formFields.find(f => f.id === fieldId);
+                if (field) {
+                    const errorMessage = field.element.parentElement.querySelector('.error-message');
+                    field.element.classList.remove('error');
+                    errorMessage.classList.remove('show');
+                    errorMessage.textContent = '';
+                }
+            }
+
+            // Function to validate field
+            function validateField(fieldId) {
+                const field = formFields.find(f => f.id === fieldId);
+                if (field) {
+                    const value = field.element.value.trim();
+                    if (value === '') {
+                        showError(fieldId, 'This field is required.');
+                        return false;
+                    } else {
+                        hideError(fieldId);
+                        return true;
+                    }
+                }
+                return false;
+            }
+
+            // Add event listeners to remove error on input
+            formFields.forEach(field => {
+                field.element.addEventListener('input', function() {
+                    if (this.value.trim() !== '') {
+                        hideError(field.id);
+                    }
+                });
+            });
+
+            // Form submission handler
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                let isValid = true;
+                
+                // Validate all fields
+                formFields.forEach(field => {
+                    if (!validateField(field.id)) {
+                        isValid = false;
+                    }
+                });
+
+                // If form is valid, you can submit it here
+                if (isValid) {
+                    // Form is valid, you can proceed with submission
+                    // For now, we'll just log it
+                    console.log('Form is valid and ready to submit');
+                    // Uncomment the line below to actually submit the form
+                    // contactForm.submit();
+                }
+            });
+        });
     </script>
 </body>
 

@@ -365,7 +365,7 @@ a.site-logo img {
 .auth-list {
     list-style: none;
     padding: 0;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
     margin-top: 20px;
 }
 
@@ -411,6 +411,7 @@ a.site-logo img {
     text-transform: capitalize;
     transition: all 0.3s ease;
     display: inline-block;
+    margin-top: 20px;
 }
 
 .section-label {
@@ -1432,6 +1433,29 @@ section.featured-legends {
     background: #1a1a1a;
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.form-group .error-message {
+    display: none;
+    color: #dc2626;
+    font-size: 14px;
+    margin-top: 6px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.form-group .error-message.show {
+    display: block;
+}
+
+.form-group input.error,
+.form-group textarea.error {
+    border-color: #dc2626;
+}
+
+.form-group input.error:focus,
+.form-group textarea.error:focus {
+    border-color: #dc2626;
+    box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
 }
 
 .premium-football {
